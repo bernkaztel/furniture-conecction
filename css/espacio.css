@@ -1,0 +1,37 @@
+#sala{
+  height: 90vh;
+}
+
+#title{
+  font-size: 4em;
+}
+
+body{
+text-align: center;
+}
+
+
+.tales2{
+  height: 400px;
+}
+
+.blog-img{
+border-radius: 50%;
+width: 50%;
+}
+
+.ftitle{
+  background-color: #77AB59;
+  color: white;
+}
+
+
+.about{
+  min-height: 200px;
+}
+/* TODO: PASAR AL MAIN CSS */
+.furniture{
+  max-height: 150px;
+  min-height: 100px;
+}
+

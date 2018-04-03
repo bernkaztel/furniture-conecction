@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="">
+  <title>Furniture Connection</title>
+  <link rel="icon" type="image/png" href="assets/images/logosilla.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Allura|Italianno|Mr+Dafoe|Work+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:100" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
+
+  <body>
+
+    <!-- Navbar -->
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+          <img id="logo" src="assets/images/logo.png" alt="logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="sections-cont" class="navbar-nav text-faded ml-2">
+            <li class="nav-item active">
+              <a id="home" class="nav-link font-weight-bold text-uppercase" onclick="getHome()">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item links">
+              <a name="living" id="living" class="nav-link text-uppercase" href="#spacetemplate" onclick="getData(this)">Living Room</a>
+            </li>
+            <li class="nav-item links">
+              <a name="bedroom" id="bedroom" class="nav-link text-uppercase" onclick="getData(this)" href="#spacetemplate">Bedroom</a>
+            </li>
+            <li class="nav-item links">
+              <a id="dinning" name="dinning" class="nav-link text-uppercase" onclick="getData(this)" href="#spacetemplate">Dinning Room</a>
+            </li>
+            <li class="nav-item links">
+              <a id="outdoor" name="outdoor" class="nav-link text-uppercase" onclick="getData(this)" href="#spacetemplate">Outdoors</a>
+            </li>
+            <li class="nav-item links">
+              <a id="studio" name="studio" class="nav-link text-uppercase" onclick="getData(this)" href="#spacetemplate">Studio</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link btn" onclick="getCheckOut()">
+                <i id="cart" class="fas fa-shopping-cart"></i>
+                <span id="counterItems" class="badge badge-info text-uppercase">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Termina Navbar -->
+    <div id="homepage">
+      <div class="container-fluid nopadding">
+        <!-- Carousel -->
+        <div class="row nopadding">
+          <div class="col nopadding">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner tales">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="assets/images/livingroom.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item tales">
+                  <img class="d-block w-100" src="assets/images/outdoor.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item tales">
+                  <img class="d-block w-100" src="assets/images/livingroom3.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Info -->
+        <div class="row nopadding  d-none d-sm-none d-md-block">
+          <div class="col nopadding">
+            <div id="info-container" class="mt-5">
+              <h1 class="mt-2 font-weight-bold text-uppercase">ABOUT US</h1>
+              <div class="container2">
+                <img id="background-info" class="about  mx-auto" src="assets/images/background.jpg" alt="Norway" style="width:70%;">
+                <div class="centered">
+                  <p id="about-us" class="mt-2  m-2 p-5 ">We are an e-commerce where you will find the ideal piece furniture for your home.
+                    Besides being able to find hundreds of articles in our catalog, we will also help you
+                    take the best decision regarding decoration styles, all of this from the hand of the best experts in the field.
+                    Contrast colors, compare sizes and textures until you are completely sure of having the ideal article for you.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="row nopadding mb-5">
+          <div class="col nopadding mb-5">
+            <section id="categories" class="mt-2 pt-5  p-4">
+                <h5 class="">Start furnishing your house, check our furniture:</h5>
+              <h1 class="font-weight-bold text-uppercase">Categories</h1>
+              
+              <!-- Pongo un break porque no puedo separar el título de las imágenes con margin :( -->
+              <br>
+              <div class="grid mt-2">
+                <div onclick="getData(this)" class="gridimg hovereffect" name="bedroom" id="bed2">
+                  <div class="border2 overlay mt-1 mb-1 ">
+                    <h2>Bedroom</h2>
+                  </div>
+                </div>
+                <div onclick="getData(this)" class="gridimg hovereffect" name="dinning" id="din">
+                  <div class="border22 overlay mt-1 mb-1">
+                    <h2>Dinning Room</h2>
+                  </div>
+                </div>
+                <div onclick="getData(this)" class="gridimg hovereffect" name="living" id="liv">
+                  <div class="border2  overlay mt-1 mb-1">
+                    <h2>Living Room</h2>
+                  </div>
+                </div>
+                <div onclick="getData(this)" class="gridimg hovereffect" name="studio" id="study">
+                  <div class="border2 overlay mt-1 mb-1">
+                    <h2>Studio</h2>
+                  </div>
+                </div>
+                <div onclick="getData(this)" class="gridimg hovereffect" name="outdoor" id="out">
+                  <div class="border2 overlay mt-1 mb-1">
+                    <h2>Outdoors</h2>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- Best Seller`s -->
+
+        <h1 class="text-center font-weight-bold text-uppercase">Our Best Seller's</h1>
+        <h6 class="mt-2 text-center">Hey! Check out this items, they're on fire!</h6>
+        <div class="container-fluid mt-5">
+          <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+              <div class="carousel-item col-md-4 active">
+                <img class="img-fluid mx-auto d-block" src="assets/images/dinnerbuffete4a.jpg"  width="300px" alt="slide 1">
+                  <h2 class="font-weight-bold">Piziano Buffete</h2>
+                  <h5> $994</h5>
+                  <button class="btn button d-block mx-auto" type="button" data-img="assets/images/dinnerbuffete4a.jpg" data-name="Piziano Buffete"
+                    data-price="$994" onclick="getCart(this)">Add to cart</button>
+                  <br>
+                </div>
+              <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="assets/images/storage1a.jpg" width="300px" alt="slide 2">
+                <h2 class="font-weight-bold">Credenza</h2>
+                <h5> $750</h5>
+                <button class="btn button d-block mx-auto" type="button" data-img="assets/images/dinnerbuffete4a.jpg" data-name="Piziano Buffete"
+                  data-price="$994" onclick="getCart(this)">Add to cart</button>
+              </div>
+              <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="assets/images/sbookcase1a.jpg" width="300px" alt="slide 3">
+                <h2 class="font-weight-bold">Chicago</h2>
+                <h5> $324</h5>
+                <button class="btn button d-block mx-auto" type="button" data-img="assets/images/dinnerbuffete4a.jpg" data-name="Piziano Buffete"
+                  data-price="$994" onclick="getCart(this)">Add to cart</button>
+              </div>
+              <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="assets/images/outtable1a.jpg" width="300px" alt="slide 4">
+                <h2 class="font-weight-bold">Venezia</h2>
+                <h5> $140</h5>
+                <button class="btn button d-block mx-auto" type="button" data-img="assets/images/dinnerbuffete4a.jpg" data-name="Piziano Buffete"
+                  data-price="$994" onclick="getCart(this)">Add to cart</button>
+              </div>
+              <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="assets/images/mesa3a.jpg" width="300px" alt="slide 5">
+                <h2 class="font-weight-bold">Estocolmo</h2>
+                <h5> $398</h5>
+                <button class="btn button d-block mx-auto" type="button" data-img="assets/images/dinnerbuffete4a.jpg" data-name="Piziano Buffete"
+                  data-price="$994" onclick="getCart(this)">Add to cart</button>
+              </div>
+              <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="assets/images/outchair2a.jpg" width="300px" alt="slide 6">
+                <h2 class="font-weight-bold">Lima</h2>
+                <h5> $145</h5>
+                <button class="btn button d-block mx-auto" type="button" data-img="assets/images/dinnerbuffete4a.jpg" data-name="Piziano Buffete"
+                  data-price="$994" onclick="getCart(this)">Add to cart</button>
+              </div>
+              <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="assets/images/dinner4a.jpg" width="300px"  alt="slide 7">
+                <h2 class="font-weight-bold">Iroquesia</h2>
+                <h5> $9,567</h5>
+                <button class="btn button d-block mx-auto" type="button" data-img="assets/images/dinnerbuffete4a.jpg" data-name="Piziano Buffete"
+                  data-price="$994" onclick="getCart(this)">Add to cart</button>
+              </div>
+              <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="assets/images/outsofa3a.jpg" width="300px" alt="slide 8">
+                <h2 class="font-weight-bold">Damasco</h2>
+                <h5> $546</h5>
+                <button class="btn button d-block mx-auto" type="button" data-img="assets/images/dinnerbuffete4a.jpg" data-name="Piziano Buffete"
+                  data-price="$994" onclick="getCart(this)">Add to cart</button>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+              <i class="fa fa-chevron-left fa-lg text-muted"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+              <i class="fa fa-chevron-right fa-lg text-muted"></i>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <!--Blog-->
+        <div class="row nopadding mt-5 mb-5">
+          <div class="nopadding mt-3 d-block mx-auto">
+            <h1 class="mb-3 text-center font-weight-bold text-uppercase ml-5">Blog</h1>
+            <h5 class="text-center">Are you looking for ideas? Check out our blog entries!</h5>
+            <div class="row nopadding mt-5">
+              <div class="tips col card tips mb-3 nopadding" style="max-width: 18rem;">
+                <img class="card-img-top blog-img" src="assets/images/rug2b.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h6 class="text-uppercase font-italic">tips</h6>
+                  <h5 class="card-title font-weight-bold text-uppercase">Make your bedroom look bigger!</h5>
+                  <a class="fancy font-weight-bold" href="#">read more</a>
+                </div>
+              </div>
+              <div class="tips col card tips mb-3 nopadding ml-5 d-none d-sm-none d-md-block" style="max-width: 18rem;">
+                <img class="card-img-top blog-img" src="assets/images/lampara-3a.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h6 class="text-uppercase font-italic">tips</h6>
+                  <h5 class="card-title font-weight-bold text-uppercase">Learn how to choose lighting for a room</h5>
+                  <a class="fancy font-weight-bold mt-2" href="#">read more</a>
+                </div>
+              </div>
+              <div class="tips col card tips mb-3 nopadding ml-5 d-none d-sm-none d-md-block" style="max-width: 18rem;">
+                <img class="card-img-top blog-img" src="assets/images/study2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h6 class="text-uppercase font-italic">tips</h6>
+                  <h5 class="card-title font-weight-bold text-uppercase">Check out how to give personality to your office </h5>
+                  <a class="fancy font-weight-bold mt-2" href="#">read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="spacetemplate" class="d-none">
+      <!-- START TEMPLATE -->
+
+      <!-- Comienza livingroom -->
+      <div class="row nopadding">
+        <div class="col nopadding">
+          <br>
+          <br>
+          <br>
+          <h1 id="title" class="font-weight-bold text-uppercase">The title</h1>
+          <h6 class="p-3" id="description">The description</h6>
+          <!-- Carousel -->
+          <div class="row nopadding">
+            <div class="col nopadding">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div id="firstCarrousel" class="carousel-inner tales2">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" id="firstCarImg" alt="First slide">
+                  </div>
+                  <div class="carousel-item tales2">
+                    <img class="d-block w-100" id="secondCarImg" src="" alt="Second slide">
+                  </div>
+                  <div class="carousel-item tales2">
+                    <img class="d-block w-100" id="thirdCarImg" src="" alt="Third slide">
+                  </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Tmplate  -->
+
+      <!-- Paletas de colores  -->
+
+      <h2 class="nopadding mt-5 font-weight-bold text-uppercase">Suggested color palletes</h2>
+      <div class="nopadding mt-3">
+        <img id="firstPallete" src="" alt="">
+        <img id="secondPallete " src="" alt="">
+        <img id="thirdPallete" src="" alt="">
+      </div>
+      <br>
+      <br>
+<br>
+<br>
+      <!-- Comienza sección furniture -->
+      <div class="container-fluid">
+        <h1 class="font-weight-bold text-uppercase">Furniture</h1>
+        <div id="furniturecontainer" class="">
+
+        </div>
+
+      </div>
+      <!--Tips-->
+      <div class="row nopadding mt-5 mb-5">
+        <div class="col nopadding mt-3">
+          <div class="blog-cont">
+            <h2 id="titleTips" class="font-weight-bold text-uppercase">The title tips</h2>
+            <div class="tips col card tips mb-3 nopadding" style="max-width: 18rem;">
+              <img class="card-img-top blog-img" id="firstTipImg" src="assets/images/rug2b.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="text-uppercase font-italic">tips</h6>
+                <h5 class="card-title font-weight-bold text-uppercase" id="firstTipTitle">Learn how to make your bedroom look bigger</h5>
+                <p id="firstTipDescription"></p>
+                <a class="fancy font-weight-bold" href="#">read more</a>
+              </div>
+            </div>
+            <div class="tips col card tips mb-3 nopadding ml-5" style="max-width: 18rem;">
+              <img class="card-img-top blog-img" id="secondTipImg" src="assets/images/lampara-3a.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="text-uppercase font-italic">tips</h6>
+                <h5 class="card-title font-weight-bold text-uppercase" id="secondTipTitle">Learn how to choose lighting for a room</h5>
+                <p id="secondDescription"></p>
+                <a class="fancy font-weight-bold mt-2" href="#">read more</a>
+              </div>
+            </div>
+            <div class="tips col card tips mb-3 nopadding ml-5" style="max-width: 18rem;">
+              <img class="card-img-top blog-img" src="assets/images/study.jpg" id="thirdTipImg" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="text-uppercase font-italic">tips</h6>
+                <h5 class="card-title font-weight-bold text-uppercase" id="thirdTipTitle">Check out how to give personality to your office </h5>
+                <p id="thirdTipDescription"></p>
+                <a class="fancy font-weight-bold mt-2" href="#">read more</a>
+              </div>
+            </div>
+          </div>
+          <button class="btn">Want to see more tips?</button>
+        </div>
+      </div>
+    </div>
+    <!-- END tips -->
+    </div>
+    <!-- END TEMPLATE -->
+
+
+    <!-- Comienza productos especifico-->
+    <div class="container d-none" id="product">
+
+    </div>
+
+
+    <div id="checkout" class="d-none">
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col">
+          <h3 class="font-weight-bold text-capitalize"> Imagen</h3>
+        </div>
+        <div class="col">
+          <h3 class="font-weight-bold text-capitalize">Product Name</h3>
+        </div>
+        <div class="col">
+          <h3 class="font-weight-bold text-capitalize"> Price (USD)</h3>
+        </div>
+      </div>
+      <div id="tableContainer"></div>
+      <div id="paypal-button-container"></div>
+    </div>
+
+
+
+    <!-- Comienza footer -->
+    <footer class="container-fluid footer">
+      <div class="row">
+        <div class="col text-center mt-2">
+          <img id="logo2" src="assets/images/logo.png" alt="Logo" width="100px">
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col ml-20">
+          <span class="font-weight-bold d-block text-left mb-1 fs ">Learn more!</span>
+          <a href="#" class="d-block text-left mb-1  fs link">About us</a>
+          <a href="#" class="d-block text-left mb-1 fs link">Contact</a>
+          <a href="#" class="d-block text-left mb-1 fs link">FAQ</a>
+          <a href="#" class="d-block text-left mb-1 fs link">Visit our blog!</a>
+        </div>
+        <div class="col mr-30">
+          <span class="font-weight-bold d-block text-left mb-1 fs">Keep in touch</span>
+          <a href="https://twitter.com/" class="d-block text-left mb-1 link">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          <a href="https://www.facebook.com/" class="d-block text-left mb-1 link">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="d-block text-left mb-1 link">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="col mr-30">
+          <h5 class="col-6 offset-3"> Subscribe to our newsletter!</h5>
+          <div class="input-group mb-3 col-6 offset-3 mt-2">
+            <input type="text" class="form-control" placeholder="Recipient's email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          </div>
+          <button type="button" name="button" class="button">Send</button>
+        </div>
+      </div>
+    </footer>
+    <!-- Termina Footer -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"></script>
+      <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/datafurniture.js"></script>
+    <script type="text/javascript" src="js/app2.js"></script>
+    <script type="text/javascript" src="js/checkout.js"></script>
+    <script type="text/javascript" src="js/checkoutfirst.js"></script>
+    <script type="text/javascript" src="js/getproduct2.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+  </body>
+
+</html>

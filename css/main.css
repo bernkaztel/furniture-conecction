@@ -1,0 +1,153 @@
+body{
+  background: #f3f3f3;
+  color: #828282;
+  font-family: 'Heebo', sans-serif;
+}
+
+#nav{
+  background-color: #ffffff;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.fancy{
+  color: white;
+}
+
+a{
+  color: inherit
+}
+
+.fancy:hover{
+  color: white !important
+}
+#logo{
+  height: 7vh;
+}
+
+#home{
+  color: #fb5200;
+}
+
+#search{
+  background-color: #828282;
+  border:#828282;
+  color: #fff;
+}
+
+#search:hover{
+  background-color: #fb5200;
+}
+
+#cart{
+  font-size: 150%;
+  color: #fb5200;
+}
+
+#cart:hover{
+  color:#828282;
+}
+
+#counter{
+  font-size: 1em;
+}
+
+#counter:hover{
+  background-color: #fb5200;
+}
+
+#logo2{
+  height: 8vh;
+  width: 10%;
+}
+
+#save{
+  background-color: #fb5200;
+}
+
+#save:hover{
+  background-color: #828282;
+}
+
+.button{
+  background-color: #fb5200;
+  border: #fb5200;
+  color: #fff;
+}
+
+.button:hover{
+  background-color: #828282;
+}
+
+.badge{
+  background-color: #436269;
+}
+
+.nopadding{
+  margin: 0;
+  padding: 0;
+}
+
+.cont{
+  display: inline-block;
+}
+
+.car{
+  background-color: #82828294;
+  color: white;
+
+}
+
+.icons{
+  color: #fff;
+}
+
+.icons:hover{
+  color:#828282;
+}
+
+.navbar-nav{
+  margin-left: 20%;
+}
+
+.blackletter{
+color: black;
+}
+.container2 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer{
+  background-color: #828282;
+  color: #f9c800;
+  font-family: 'Heebo', sans-serif;
+}
+
+.link{
+  color: #f3f3f3;
+}
+
+.link:hover{
+  color: #fb5200;
+  text-decoration: none;
+}
+
+.footer-col{
+  text-align: center !important;
+  width: 10%;
+}
+
+.furniture-img{
+  cursor: pointer;
+}
