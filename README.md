@@ -8,7 +8,7 @@ Proyecto de creación de la página (SPA) de un e-commerce utilizando la API de 
 ## Vista previa 
 
 ### Vista de Home (Landing-page)
-![Vista de Home & Houses](assets/images/p1.png)
+![Vista de Home & Houses](https://github.com/bernkaztel/furniture-connection-v2/blob/master/assets/images/p1.png?raw=true)
 
 ### Vista de Bedroom. 
 ![Vista de Home & Houses](assets/images/p2.png)
