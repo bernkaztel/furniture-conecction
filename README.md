@@ -12,7 +12,7 @@ Furniture connection es un e-commerce que se dedica a la venta de muebles de dis
 
 
 ## Vista previa 
-![Vista de Home & Houses](https://github.com/bernkaztel/furniture-connection-v2/blob/master/assets/images/furntu.png?raw=true)
+![Vista de Home & Houses](https://github.com/bernkaztel/furniture-connection-v2/blob/master/assets/images/furntu2.png?raw=true)
 
 ### Vista de Home (Landing-page)
 ![Vista de Home & Houses](https://github.com/bernkaztel/furniture-connection-v2/blob/master/assets/images/p1.png?raw=true)
