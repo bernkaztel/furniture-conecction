@@ -11,8 +11,6 @@ Proyecto desarrollado para Laboratoria consistente en la creación de una SPA (S
 Furniture connection es un e-commerce que se dedica a la venta de muebles de diseñador. Aquello que lo diferencia de sus competidores es que no únicamente vende muebles, sino que ayuda a hacer la experiencia de decoración más fácil y placentera para sus clientes, otorgando consejos de decoración y también sugiriendo paletas de colores de acuerdo a cada habitación. Cuenta con cinco categorías de muebles: Living Room, Dinning Room, Bedroom, Outdors & Studio. 
 
 
-## Vista previa 
-![Vista de Home & Houses](https://github.com/bernkaztel/furniture-connection-v2/blob/master/assets/images/furntu2.png?raw=true)
 
 ### Vista de Home (Landing-page)
 ![Vista de Home & Houses](https://github.com/bernkaztel/furniture-connection-v2/blob/master/assets/images/p1.png?raw=true)
